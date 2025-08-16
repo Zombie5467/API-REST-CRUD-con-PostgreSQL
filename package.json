@@ -4,7 +4,9 @@
   "description": "Proyecto en Node.js con TypeScript, usando PostgreSQL como base de datos y JWT para autenticación",
   "main": "src/app.js",
   "scripts": {
-    "dev": "node --loader ts-node/esm src/server.ts"
+    "dev": "node --loader ts-node/esm src/server.ts",
+    "build": "rimraf ./dist && tsc",
+    "start": "node dist/server.js"
   },
   "type": "module",
   "author": "Addel",
